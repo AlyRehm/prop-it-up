@@ -1,23 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+
+// need to import your components to be able to use them 
+import PersonCard from './components/PersonCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <PersonCard 
+        firstName={ "Alyson" }
+        lastName={ "Rehm" }
+        age={ 34 }
+          hairColor={ "Ash Brown" } />
+
+      <PersonCard 
+        firstName={ "Andrew" }
+        lastName={ "Sanders" }
+        age={ 33 }
+        hairColor={ "Dirty Blonde" } />
+
+      <PersonCard 
+        firstName={ "Callie" }
+        lastName={ "Anne" }
+        age={ 12 }
+        hairColor={ "White with Black Spots" } />
+
+      <PersonCard 
+        firstName={ "Panda" }
+        lastName={ "Pony" }
+        age={ 13 }
+        hairColor={ "Black & White Paint" } />
+
     </div>
   );
 }
